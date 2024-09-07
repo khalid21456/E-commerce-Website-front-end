@@ -1,5 +1,6 @@
 import Counter from "./components/Counter";
 import Image from "next/image";
+import Slider from "./components/Slider";
 export default function Home() {
   return (
     <div className="h-[2000px]">
@@ -37,9 +38,15 @@ export default function Home() {
             </div>
           </div>
           <div className="ml-64">
-            <Image src="/images/hero-page-image.png" height={700} width={500}/>
+            <Image src="/images/hero-page-image.png" height={700} width={500} />
           </div>
         </div>
+      </div>
+      <div id="newest-product" className="mt-12 ml-7 text-slate-800">
+        <div>
+          <h1 className="text-2xl font-bold" style={{fontFamily:"Varela Round"}}>Newest Products</h1>
+        </div>
+      
       </div>
     </div>
   );
